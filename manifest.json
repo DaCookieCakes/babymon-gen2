@@ -1,0 +1,20 @@
+{
+  "id": "babymon",
+  "name": "Babymon",
+  "version": "0.1.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "game_version": ">=0.0.0-dev <1.0.0",
+  "games": ["gen2"],
+  "gen2compat": true,
+  "category": "GAMEPLAY",
+  "priority": 100,
+  "permissions": [],
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "incompatible": [],
+  "experimental": false,
+  "description": "Authored with the Gen1Recomp content editor"
+}
