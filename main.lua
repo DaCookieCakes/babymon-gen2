@@ -13,6 +13,16 @@ return function(mod)
         { 140, 49, 49 },
       },
     },
+    COINPUR = {
+      normal = {
+        { 255, 255, 41 },
+        { 255, 181, 99 },
+      },
+      shiny = {
+        { 255, 181, 99 },
+        { 196, 72, 214 },
+      },
+    },
     VULPIII = {
       normal = {
         { 255, 148, 74 },
@@ -142,6 +152,232 @@ return function(mod)
   })
 
   mod.content.icons:override("BURGELA", "ICON_ODDISH")
+
+  mod.content.pokemon:register("COINPUR", {
+    baseExp = 69,
+    baseStats = {
+      attack = 30,
+      defense = 10,
+      hp = 25,
+      specialAttack = 30,
+      specialDefense = 35,
+      speed = 70,
+    },
+    catchRate = 255,
+    cry = "MEOWTH",
+    dex = 254,
+    eggGroups = {
+      "EGG_NONE",
+      "EGG_NONE",
+    },
+    eggMoves = {
+      "SPITE",
+      "CHARM",
+      "HYPNOSIS",
+      "AMNESIA",
+    },
+    eggSteps = 20,
+    evolutions = {
+      {
+              into = "MEOWTH",
+              method = "EVOLVE_HAPPINESS",
+              time = "ANYTIME",
+            },
+    },
+    genderRatio = 127,
+    growthRate = "GROWTH_MEDIUM_FAST",
+    growthRateId = 0,
+    id = "COINPUR",
+    index = 254,
+    items = {},
+    levelMoves = {
+      {
+              level = 1,
+              move = "SCRATCH",
+            },
+      {
+              level = 4,
+              move = "GROWL",
+            },
+      {
+              level = 7,
+              move = "TAIL_WHIP",
+            },
+      {
+              level = 11,
+              move = "SAND_ATTACK",
+            },
+      {
+              level = 15,
+              move = "PAY_DAY",
+            },
+      {
+              level = 20,
+              move = "BITE",
+            },
+      {
+              level = 25,
+              move = "FURY_SWIPES",
+            },
+      {
+              level = 31,
+              move = "THIEF",
+            },
+      {
+              level = 37,
+              move = "SCREECH",
+            },
+      {
+              level = 44,
+              move = "SLASH",
+            },
+    },
+    name = "COINPUR",
+    picSize = 5,
+    spriteBack = mod.path .. "/assets/coinpur-back.png",
+    spriteFront = mod.path .. "/assets/coinpur-front.png",
+    tmhm = {
+      "HEADBUTT",
+      "CURSE",
+      "TOXIC",
+      "ZAP_CANNON",
+      "PSYCH_UP",
+      "HIDDEN_POWER",
+      "SUNNY_DAY",
+      "SNORE",
+      "ICY_WIND",
+      "PROTECT",
+      "ENDURE",
+      "FRUSTRATION",
+      "IRON_TAIL",
+      "THUNDER",
+      "RETURN",
+      "SHADOW_BALL",
+      "MUD_SLAP",
+      "DOUBLE_TEAM",
+      "SWAGGER",
+      "SLEEP_TALK",
+      "SWIFT",
+      "DEFENSE_CURL",
+      "DREAM_EATER",
+      "DETECT",
+      "REST",
+      "ATTRACT",
+      "THIEF",
+      "NIGHTMARE",
+    },
+    types = {
+      "NORMAL",
+      "NORMAL",
+    },
+  })
+
+  mod.content.icons:override("COINPUR", "ICON_FOX")
+
+  mod.content.pokemon:patch("MEOWTH", {
+    baseExp = 69,
+    baseStats = {
+      attack = 45,
+      defense = 35,
+      hp = 40,
+      specialAttack = 40,
+      specialDefense = 40,
+      speed = 90,
+    },
+    catchRate = 255,
+    dex = 52,
+    eggGroups = {
+      "EGG_GROUND",
+      "EGG_GROUND",
+    },
+    eggGroupsRaw = 85,
+    eggMoves = {},
+    eggSteps = 20,
+    evolutions = {
+      {
+              into = "PERSIAN",
+              level = 28,
+              method = "EVOLVE_LEVEL",
+            },
+    },
+    genderRatio = 127,
+    growthRate = "GROWTH_MEDIUM_FAST",
+    growthRateId = 0,
+    id = "MEOWTH",
+    index = 52,
+    items = {},
+    levelMoves = {
+      {
+              level = 1,
+              move = "SCRATCH",
+            },
+      {
+              level = 1,
+              move = "GROWL",
+            },
+      {
+              level = 11,
+              move = "BITE",
+            },
+      {
+              level = 20,
+              move = "PAY_DAY",
+            },
+      {
+              level = 28,
+              move = "FAINT_ATTACK",
+            },
+      {
+              level = 35,
+              move = "SCREECH",
+            },
+      {
+              level = 41,
+              move = "FURY_SWIPES",
+            },
+      {
+              level = 46,
+              move = "SLASH",
+            },
+    },
+    name = "MEOWTH",
+    picSize = 5,
+    tmhm = {
+      "HEADBUTT",
+      "CURSE",
+      "TOXIC",
+      "ZAP_CANNON",
+      "PSYCH_UP",
+      "HIDDEN_POWER",
+      "SUNNY_DAY",
+      "SNORE",
+      "ICY_WIND",
+      "PROTECT",
+      "ENDURE",
+      "FRUSTRATION",
+      "IRON_TAIL",
+      "THUNDER",
+      "RETURN",
+      "SHADOW_BALL",
+      "MUD_SLAP",
+      "DOUBLE_TEAM",
+      "SWAGGER",
+      "SLEEP_TALK",
+      "SWIFT",
+      "DEFENSE_CURL",
+      "DREAM_EATER",
+      "DETECT",
+      "REST",
+      "ATTRACT",
+      "THIEF",
+      "NIGHTMARE",
+    },
+    tmhmRaw = { 102, 151, 89, 229, 198, 62, 2, 0 },
+    types = {
+      "NORMAL",
+      "NORMAL",
+    },
+  })
 
   mod.content.pokemon:patch("TANGELA", {
     baseExp = 166,
@@ -466,8 +702,17 @@ return function(mod)
         height = 209,
         id = "BURGELA",
         kind = "VINE",
-        text = "It grows around<NEXT>coasts and swamps by using the",
+        text = "It grows around<NEXT>coasts and swamps<NEXT>by using the",
         text2 = "salt for nutrients.",
+        weight = 40,
+      },
+      ["COINPUR"] = {
+        dex = 254,
+        height = 100,
+        id = "COINPUR",
+        kind = "SCRATCHCAT",
+        text = "Coinpur willsteal<NEXT>anything shiny and<NEXT>try to hide it in",
+        text2 = "a nearby den.",
         weight = 40,
       },
       ["VULPIII"] = {
@@ -475,9 +720,9 @@ return function(mod)
         height = 100,
         id = "VULPIII",
         kind = "FOX",
-        text = "Its fire breath<NEXT>does not come in<NEXT> until its tail",
+        text = "Its fire breath<NEXT>does not come in<NEXT>until its tail",
         text2 = "splitting begins.",
-        weight = 110,
+        weight = 40,
       },
     }
     mod.events:on("mods.loaded", function(ev)
@@ -518,6 +763,8 @@ return function(mod)
   end
 
   mod.content.cries:register("BURGELA", { base = "TANGELA" })
+
+  mod.content.cries:register("COINPUR", { base = "MEOWTH" })
 
   mod.content.cries:register("VULPIII", { base = "VULPIX" })
 
