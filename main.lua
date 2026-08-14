@@ -462,6 +462,7 @@ return function(mod)
   do
     local _dex = {
       ["BURGELA"] = {
+        dex = 252,
         height = 209,
         id = "BURGELA",
         kind = "VINE",
@@ -470,6 +471,7 @@ return function(mod)
         weight = 40,
       },
       ["VULPIII"] = {
+        dex = 253,
         height = 100,
         id = "VULPIII",
         kind = "FOX",
@@ -487,11 +489,31 @@ return function(mod)
         data.gen2Pokedex = dex; data.pokedex = dex
       end
       dex.entries = dex.entries or {}
+      dex.newOrder = dex.newOrder or {}
+      dex.alphabeticalOrder = dex.alphabeticalOrder or {}
+
+      -- track what's already listed so re-loading a mod doesn't duplicate entries
+      local inNew, inAZ = {}, {}
+      for _, id in ipairs(dex.newOrder) do inNew[id] = true end
+      for _, id in ipairs(dex.alphabeticalOrder) do inAZ[id] = true end
+
       for id, patch in pairs(_dex) do
         local row = dex.entries[id] or {}
         for k, v in pairs(patch) do row[k] = v end
         dex.entries[id] = row
+
+        if not inNew[id] then
+          dex.newOrder[#dex.newOrder + 1] = id
+          inNew[id] = true
+        end
+        if not inAZ[id] then
+          dex.alphabeticalOrder[#dex.alphabeticalOrder + 1] = id
+          inAZ[id] = true
+        end
       end
+
+      -- keep A-Z actually alphabetical
+      table.sort(dex.alphabeticalOrder)
     end)
   end
 
