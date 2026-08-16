@@ -11,11 +11,14 @@
   "category": "OTHER",
   "priority": 100,
   "permissions": [],
-  "dependencies": [],
+  "dependencies": [
+    "expanded_species@>=0.1.1 <1.0.0"
+  ],
   "optional_dependencies": [],
   "conflicts": [],
   "incompatible": [],
   "experimental": false,
   "description": "Adds baby Pokemon to Gen 2 for Gen1Recomp++.",
-  "github": "https://github.com/DaCookieCakes/babymon-gen2/"
+  "github": "https://github.com/DaCookieCakes/babymon-gen2/",
+  "affects_link": true
 }
