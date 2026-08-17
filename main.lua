@@ -28,6 +28,11 @@ return function(mod)
   local files = {
     "species/burgela.lua",
     "species/coinpur.lua",
+    "species/dodaerie.lua",
+    "species/orfry.lua",
+    "species/paraspor.lua",
+    "species/pupperon.lua",
+    "species/smujj.lua",
     "species/vulp3.lua",
   }
 

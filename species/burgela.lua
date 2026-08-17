@@ -1,3 +1,4 @@
+-- # POKEMON ID # --
 local speciesId = "BURGELA"
 
 -- # REGISTRATION # --
@@ -70,7 +71,7 @@ return function(mod)
                     { 140, 49, 49 },
                 },
             },
-            iconFallback = "ODDISH",
+            iconFallback = "TANGELA",
             paletteFallback = "TANGELA"
         },
     }

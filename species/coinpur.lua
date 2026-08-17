@@ -1,3 +1,4 @@
+-- # POKEMON ID # --
 local speciesId = "COINPUR"
 
 -- # REGISTRATION # --
@@ -69,7 +70,7 @@ return function(mod)
                     { 196, 72, 214 },
                 },
             },
-            iconFallback = "FOX",
+            iconFallback = "MEOWTH",
             paletteFallback = "MEOWTH",
         },
     }
