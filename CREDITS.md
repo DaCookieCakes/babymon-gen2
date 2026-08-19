@@ -1,14 +1,18 @@
-# ProprietaryWeakness 
+# CREDITS
+## ProprietaryWeakness 
 - Pokedex entries
 
-# DaCookieCakes
+## DaCookieCakes
 - The mod itself
 
-# Dario
+## Dario
 - Bipulla back sprite
 
-# Mistermiracle
+## Mistermiracle
 - The [Expanded Species](<https://github.com/mistermiracle3036/Expanded-Species>) mod.
 
-# Pokemon Team
+## Nob Ogasawara
+- Pokemon names
+
+## The Pokemon Team
 - 99% of the sprites used and modified.
