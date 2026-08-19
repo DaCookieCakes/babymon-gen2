@@ -1,7 +1,7 @@
 {
   "id": "babymon",
   "name": "Babymon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -18,7 +18,7 @@
   "conflicts": [],
   "incompatible": [],
   "experimental": false,
-  "description": "Adds baby Pokemon to Gen 2 for Gen1Recomp++.",
-  "github": "https://github.com/DaCookieCakes/babymon-gen2/",
+  "description": "Adds cut baby Pokemon to Gen 2 for Gen1Recomp++.",
+  "github": "DaCookieCakes/babymon-gen2/",
   "affects_link": true
 }
