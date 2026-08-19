@@ -19,6 +19,6 @@
   "incompatible": [],
   "experimental": false,
   "description": "Adds cut baby Pokemon to Gen 2 for Gen1Recomp++.",
-  "github": "DaCookieCakes/babymon-gen2/",
+  "github": "DaCookieCakes/babymon-gen2",
   "affects_link": true
 }
