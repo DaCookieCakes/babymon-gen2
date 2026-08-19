@@ -26,9 +26,11 @@ return function(mod)
   expanded = assert(expanded.requireCapabilities({ "safeDefaults", "customDex" }))
 
   local files = {
+    "species/bipulla.lua",
     "species/burgela.lua",
     "species/coinpur.lua",
     "species/dodaerie.lua",
+    "species/kolta.lua",
     "species/orfry.lua",
     "species/paraspor.lua",
     "species/pupperon.lua",
